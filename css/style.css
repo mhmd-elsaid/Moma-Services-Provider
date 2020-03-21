@@ -1,0 +1,240 @@
+
+h5{
+    font-size: 1.2rem;
+}
+/* top nav */
+.top-nav{
+    background-color: #4f1648;  
+}
+.top-nav ul li {
+    margin-left: .5rem;
+}
+
+/* main nav */
+.main-nav .navbar-collapse .active .nav-link{
+    color: #ff9900 ;
+}
+.main-nav .navbar-collapse .nav-item .nav-link:hover{
+    color: #ff9900 ;
+}
+.sign-in{
+    border-right: .2rem dashed #ff9900;
+    border-left: .2rem dashed #ff9900;
+    margin: 0;
+}
+
+/* header */
+header{
+    background-image: linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)), url(../img/alex-alvarez-63YVMrL2d6g-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+header .container .bg-white .input-group .form-control{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+header .container .bg-white .input-group .input-group-append .btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* departments */
+.heading::after{
+    display: block;
+    content: "";
+    width: 10rem;
+    height: .09rem;
+    background-color: #aaa;
+    margin: 1.3rem auto;
+}
+.departs-icons{
+    width: 65%;
+    margin-bottom: 1rem;
+}
+.departs{
+    overflow: hidden;
+}
+.departs-hover{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -248px; 
+    font-size: .9rem;
+   transition:all .3s linear;
+}
+.departs:hover .departs-hover{
+   top: 0;
+}
+.list-group-item{
+    padding-bottom: .63rem;
+    padding-top: .63rem;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.departs-small-icons{
+    width: 1.5rem;
+}
+.departs-hover .list-group .list-group-item:hover{
+    background-color: #f8f9fa;
+}
+
+/* ask us */
+.ask-us{
+    background: url(../img/Untitled-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.ask-us .btn{
+    border-radius: 2rem;
+    color: #ff9900;
+}
+
+/* SERVICES */
+.rate{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.card{
+    border-radius: 0;
+    font-size: .8rem;
+}
+.card-body{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.card .card-title{
+    margin-bottom: 1rem;
+}
+.card-footer{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.carousel-control-prev {
+    left: -6rem;
+    
+}
+.carousel-control-next {
+    right: -6rem;
+    
+}
+
+/* NEWEST SERVICES */
+.newest-services p , .newest-services span{
+    font-size: .65rem;
+}
+
+/* FOOTER */
+footer{
+    background-image:  linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,.7)), url(../img/dark-paths.png);
+    background-position: center;
+    height: auto;
+    
+}
+footer .col-5 a{
+    font-size: .8rem;
+}
+footer .col-3 a{
+    font-size: 1.8rem;
+}
+
+/* links hover */
+.fa-facebook-f:hover , .fa-facebook-square:hover{
+    color: #3b5998 ;
+}
+.fa-twitter:hover{
+    color: #00acee ;
+}
+.fa-linkedin-in:hover, .fa-linkedin:hover{
+    color: #0e76a8;
+}
+.fa-instagram:hover{
+    color: #dd2a7b;
+}
+.fa-rss:hover{
+    color: #ee802f ;
+}
+.fa-pinterest:hover , .fa-youtube:hover , .fa-google-plus:hover{
+    color: #c8232c;
+}
+.yellow-bg{
+    background-color: #cc9933;
+}
+
+
+
+
+
+
+@media(max-width: 1199px){
+    .list-group-item{
+        padding-bottom: .49rem;
+        padding-top: .49rem;
+    }
+}
+
+@media(max-width: 991px){
+    .top-nav .navbar-collapse .social{
+        display: -webkit-box;
+        padding-right: 30%; 
+        font-size: 1.5rem;
+    } 
+    .top-nav .social li {
+        margin-left: 2rem;
+    }
+    .top-nav .navbar-collapse .float-lg-left {
+    
+        display: -webkit-box;
+        padding-right:30% ;
+        
+    }  
+    .sign-in{
+        border-right: 0;
+        border-left: 0;
+    }
+    .departs h5{
+        font-size: 1.1rem;
+    }
+    .list-group-item{
+        padding-bottom: .25rem;
+        padding-top: .25rem;
+    }
+    .departs-hover{
+        font-size: .7rem;
+    }
+    .carousel .carousel-inner .carousel-item .row .col-md-3 .card{
+        font-size: .6rem;
+    }
+
+}
+
+@media(max-width: 767px){
+    .top-nav .navbar-collapse .float-lg-left {
+        padding-right:20% ;
+    }  
+    .departs-hover{
+        font-size: 1.3rem;
+    }
+    .list-group-item{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .departs-hover{
+        top: -360px;
+    }
+    .top-nav .social li {
+        margin-left: 1rem;
+    }
+    .carousel .carousel-inner .carousel-item .row .col-md-3 .card{
+        font-size: .8rem;
+    }
+}
